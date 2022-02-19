@@ -12,14 +12,13 @@ const get_event = (req, res, next) => {
         User.findOne({ _id: event.author }, (err, author) => {
             if (err) return next(err)
 
-            console.log('author:', author._id)
-
             res.json({
                 title: event.title,
                 description: event.description,
                 author: author.name,
                 author_id: author._id,
-                users: event.users
+                users: event.users,
+                date: event.date
             })
         })
     })

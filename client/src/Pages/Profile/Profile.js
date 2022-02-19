@@ -188,6 +188,7 @@ function Profile() {
                             like={event.like}
                             active={event.active}
                             id={event.id}
+                            date={event.date}
                         />
                     )) : <h1>Пока у вас ещё нет событый.</h1>
             }

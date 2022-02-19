@@ -15,7 +15,8 @@ const get_events = (req, res, next) => {
                     description: event.description,
                     num_users: event.users.length,
                     like: event.like.length,   
-                    id: event._id
+                    id: event._id,
+                    date: event.date
                 }
             }))
         })
@@ -30,7 +31,8 @@ const get_events = (req, res, next) => {
                     num_users: event.users.length,
                     like: event.like.length,  
                     active: (event.like.indexOf(req.user._id) != -1),
-                    id: event._id
+                    id: event._id,
+                    date: event.date
                 }
             }))
         })

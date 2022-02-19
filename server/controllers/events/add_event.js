@@ -3,7 +3,8 @@ import Event from "../../models/event.js"
 const add_event = (req, res, next) => {
     const {
         title, 
-        description
+        description,
+        date
     } = req.body
 
     if (!(title && description))
@@ -12,6 +13,7 @@ const add_event = (req, res, next) => {
     let event = new Event({
         title: title,
         description: description,
+        date: date,
         author: req.user._id
     })
 

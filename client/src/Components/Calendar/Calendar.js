@@ -37,6 +37,19 @@ function Calendar() {
         }
     }
 
+    function select(i) {
+        return (event) => {
+            let new_date = new Date(
+                current.getFullYear(),
+                current.getMonth(),
+                i 
+            )
+
+            setCurrentState(new_date)
+            setDays(new_date)
+        }
+    }
+
     useEffect(() => {
         setDays(current)
     }, [])
@@ -70,8 +83,8 @@ function Calendar() {
                     (i == current.getDate() &&
                     current.getMonth() == new Date().getMonth() && 
                     current.getFullYear() == new Date().getFullYear()) ?
-                        <li key={k} className="day active">{i}</li> :
-                        <li key={k} className="day">{i}</li>
+                        <li key={k} onClick={select} className="day active">{i}</li> :
+                        <li key={k} onClick={select} className="day">{i}</li>
                 )
             }</ul>
         </div>

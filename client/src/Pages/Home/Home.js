@@ -36,6 +36,7 @@ function Home() {
                             like={event.like}
                             active={event.active}
                             id={event.id}
+                            date={event.date}
                         />
                     )) : <h1>Пока ещё нет событый.</h1>
                 }

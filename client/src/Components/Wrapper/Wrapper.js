@@ -22,9 +22,9 @@ function Wrapper() {
                 <Route path="/profile/" element={<Profile/>}></Route>
                 <Route path="/add-event/" element={<AddEvent/>}></Route>
                 <Route path="/event-detail/:id" element={<Event/>}></Route>
-                <Route path="*" element={<h1>404</h1>}></Route>
+                <Route path="*" element={<Navigate to="/"/>}></Route>
             </Routes>
-        </div> //<Navigate to="/"/>
+        </div> //
     )
 }
 

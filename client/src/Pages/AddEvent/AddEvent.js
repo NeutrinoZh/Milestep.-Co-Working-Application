@@ -16,6 +16,7 @@ import Caldendar from '../../Components/Calendar/Calendar.js'
 function AddEvent() {
     const title = useRef(null)
     const description = useRef(null)
+    const date = useRef(null)
 
     const [ error, setErrorState ] = useState('')
     const [ redirect, setRedirectState ] = useState(false)
@@ -27,7 +28,8 @@ function AddEvent() {
 
         request(config.api.add_event, 'POST', {
             title: title.current.value, 
-            description: description.current.value
+            description: description.current.value,
+            date: date.current.value
         }, [
             setErrorState,
             setRedirectState
@@ -53,6 +55,13 @@ function AddEvent() {
                     ref={description}
                     className="fright"
                     required
+                />
+
+                <InputField
+                    name="date"
+                    _ref={date}
+                    type="date"
+                    label={'Date:'}
                 />
 
                 <Caldendar></Caldendar>

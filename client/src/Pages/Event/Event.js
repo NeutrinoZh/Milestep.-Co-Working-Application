@@ -74,6 +74,13 @@ function Event() {
         <div className="card center card-full event-page">
             <h1>{event.title}</h1>
             <Link to={`${config.urls.author_detail}${event.author_id}`}><h3>Author: {event.author} (link)</h3></Link>
+            
+            <p>
+                {event.date.toLocaleString()}
+            </p>
+
+            <br/>
+            
             <p>
                 {event.description}
             </p>
