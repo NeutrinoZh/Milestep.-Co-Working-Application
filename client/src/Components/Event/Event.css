@@ -1,0 +1,24 @@
+.event .num-user {
+    margin-top: 20%;
+    float: right;
+}
+
+.event button {
+    width: 30%;
+    min-height: 35px;
+
+    border: none;
+    border-radius: 3%;
+    background-color: #7AD673;
+    float: left;
+
+    color: white;
+    font-family: 'Rowdies', cursive;
+    font-size: 14pt;
+
+    margin-top: 35%;
+}
+
+.event button:hover {
+    background-color: #6fb86a;
+}

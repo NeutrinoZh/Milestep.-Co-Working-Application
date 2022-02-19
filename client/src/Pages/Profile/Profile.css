@@ -1,0 +1,59 @@
+.profile {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile p {
+    font-size: 20px;
+    font-family: 'Rowdies', cursive;
+    
+    color: rgb(230, 230, 230);
+}
+
+.profile button {
+    width: 20%;
+    min-height: 30px;
+
+    border: none;
+    border-radius: 2%;
+    background-color: #7AD673;
+    float: right;
+
+    color: white;
+    font-size: 16px;
+
+    margin-right: 1%;
+}
+
+.profile button:hover {
+    background-color: #6fb86a;
+}
+
+.profile input {
+    margin-right: 1%;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.your-events {
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 25pt;
+    font-family: 'Rowdies', cursive;
+}
+
+.btn-add-events {
+    margin: 0px auto;
+}
+
+.profile h3 {
+    color: white;
+    font-family: 'Rowdies', cursive;
+}

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+
+:root {
+    --input-background-main-color: #e1f5f8;
+    --input-background-secondary-color: #d2f9ff;
+
+    --light-color: rgb(174, 250, 174);
+
+    --btn-background-main-color: #7AD673;
+    --btn-background-light-color: #91e98b;
+    --btn-background-dark-color: #4fa149;
+}

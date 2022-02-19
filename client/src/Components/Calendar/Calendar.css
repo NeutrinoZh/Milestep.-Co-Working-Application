@@ -1,0 +1,81 @@
+.calendar {
+    width: 97%;
+    margin-top: 30%;
+}
+
+.month {
+    padding: 40px 25px;
+    width: 100%;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0px;
+    margin-bottom: 40px;
+    padding: 0px;
+
+    list-style-type: none;
+}
+
+.month ul li {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.month ul li:hover {
+    color: rgb(255, 153, 153)
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+    margin-right: 8%;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: rgb(221, 221, 221, 0.5);
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 14.2%;
+    color: #677;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.days li {
+    display: inline-block;
+
+    width: 14.2%;
+
+    list-style-type: none;
+    text-align: center;
+    color: #777;
+    
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.days li:hover { 
+    color: rgb(228, 36, 36);
+}
+
+.active {
+    background: rgb(249, 201, 255);
+}

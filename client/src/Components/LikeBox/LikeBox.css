@@ -1,0 +1,23 @@
+.likebox {
+    float: right;
+}
+
+.likebox p {
+    color: rgb(190, 4, 4);
+    font-size: 15px;
+}
+
+.likebox b {
+    font-size: 30px;
+    color: rgb(248, 204, 252);
+    transition: all 0.2s ease-in;
+}
+
+.likebox b:hover {
+    font-size: 31px;
+    color: rgb(252, 156, 188);
+}
+
+.likebox b.like-active {
+    color: red;
+}

@@ -1,0 +1,77 @@
+.card {
+    width: 350px;
+    min-height: 30vh;
+
+    padding: 1%;
+    margin-bottom: 2%;
+
+    font-family: 'Rowdies', cursive;
+    font-size: 21px;
+
+    color: rgb(236, 248, 255);
+
+    background-color: rgb(240, 248, 255, 0.4);
+    border-radius: 4%;
+
+    user-select: none;
+    transition: all 0.1s ease-in;
+}
+
+.card-inline {
+    display: inline-block;
+    margin-left: 1%;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 15px 5px rgb(174, 250, 174);
+    color: rgb(255, 255, 255);
+}
+
+.card:hover h1::after {
+    width: 100%;
+    color: rgb(211, 6, 6);
+}
+
+.card span {
+    display: block;
+    width: 50%;
+    margin: 0px auto;
+}
+
+.card h1 {
+    position: relative;
+    font-size: 21px;
+}
+
+.card h1::after {
+    position: absolute;
+    left: 0px;
+    
+    display: block;
+    width: 0px;
+    height: 2px;
+
+    background-color: rgb(255, 255, 255);
+    content: "";
+
+    transition: width 0.2s ease-in;
+}
+
+.card p {
+    float: left;
+}
+
+.group {
+    display: inline-block;
+    width: 50%;
+    margin: 0px auto;
+}
+
+.card-full {
+    width: 85%;
+    min-height: 90vh;
+}
+
+.card-page {
+    margin-top: 3%;
+}

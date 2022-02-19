@@ -1,0 +1,24 @@
+#text {
+    min-width: 80%;
+    min-height: 40vh;
+}
+
+.btn-submit {
+    width: 20%;
+    min-height: 30px;
+
+    border: none;
+    border-radius: 2%;
+    background-color: #7AD673;
+    float: right;
+
+    color: white;
+    font-size: 16px;
+
+    margin-right: 1%;
+    margin-top: 5%;
+}
+
+.btn-submit:hover {
+    background-color: #6fb86a;
+}

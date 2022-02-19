@@ -1,0 +1,32 @@
+.event-page {
+    margin-top: 3%;
+}
+
+.event-page .num-user {
+    margin-top: 55vh;
+}
+
+.event-page button {
+    width: 30%;
+    min-height: 35px;
+
+    border: none;
+    border-radius: 3%;
+    background-color: #7AD673;
+    float: right;
+
+    color: white;
+    font-family: 'Rowdies', cursive;
+    font-size: 14pt;
+    margin-top: 55vh;
+}
+
+.event-page button:hover {
+    background-color: #6fb86a;
+}
+
+.event-page ol {
+    float: right;
+    overflow: hidden scroll;
+    max-height: 50vh;
+}
