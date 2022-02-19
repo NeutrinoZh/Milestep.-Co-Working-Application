@@ -76,7 +76,7 @@ function Event() {
             <Link to={`${config.urls.author_detail}${event.author_id}`}><h3>Author: {event.author} (link)</h3></Link>
             
             <p>
-                {event.date.toLocaleString()}
+                {event.date ? event.date.toLocaleString() : ''}
             </p>
 
             <br/>
